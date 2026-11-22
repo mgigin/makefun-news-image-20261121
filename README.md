@@ -9,18 +9,27 @@ world news in one image").
 
 Bounty page: https://make.fun/bounty/news-image-20261121
 
+Referral: https://make.fun/r/c6yw2yzb
+
 ## What it is
 
-A 1024×1024 broadsheet-style image summing up the world news of
-**Saturday 21 November 2026**: 48 stories across every continent, each
-happened or first reported on that day (verified against AP, Reuters, ESA,
-USGS, BBC, France 24, Al Jazeera and FIA reports). A DATE CHECK box lists
+A 1024×1024 cream broadsheet summing up the world news of
+**Saturday 21 November 2026**: 48 stories across six regions, each happened
+or first reported on that day (verified against AP, Reuters, AFP, BBC,
+Al Jazeera, Kyiv Post, USGS, ESA and FIA reports). A DATE CHECK box lists
 other days' news deliberately left out.
 
-This edition uses a dark navy-and-gold design: sans-serif masthead, outline
-region chips, a left rail of top stories, two-column brief cards, and a
-world map drawn from real coastline polygons (equirectangular projection,
-graticule, geographically placed story pins).
+Layout: serif masthead, six-stat band, region chips, three illustrated lead
+panels, ten brief cards with original spot illustrations, a world map drawn
+from real coastline polygons (equirectangular projection, graticule,
+geographically placed story pins), and a numbered list of 35 further
+stories. All artwork is original, drawn in code.
+
+Fact notes from verification: the Kryvyi Rih toll is 2 killed / 58 injured
+(42 was the stale Friday-night count); three ballistic missiles were
+downed over Riyadh early Saturday (the Jazan pair was Friday evening);
+Verstappen inherited Las Vegas pole after Antonelli's grid penalty; India
+closed day three at Wellington on 486/4 with Rahul on 136.
 
 ## How it runs
 

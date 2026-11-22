@@ -1,11 +1,12 @@
 // Entry for make.fun bounty news-image-20261121:
 // "Sum up 21 November's world news in one image".
 //
-// The artwork is entry.png beside this file (1024x1024, drawn offline by
-// make_image.py from the day's headlines). This program checks the file
-// against the bounty gate (PNG, at most 1 MiB, at most 1024x1024) and copies
-// its bytes unchanged to the grader's output directory. Node standard
-// library only, no network, deterministic: every run writes the same bytes.
+// The artwork is entry.png beside this file (1024x1024 cream broadsheet,
+// drawn offline by make_image.py from the day's headlines). This program
+// checks the file against the bounty gate (PNG, at most 1 MiB, at most
+// 1024x1024) and copies its bytes unchanged to the grader's output
+// directory. Node standard library only, no network, deterministic:
+// every run writes the same bytes.
 //
 // Local test (outside the grader container):
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
@@ -31,6 +32,9 @@ for (let i = 0; i < PNG_SIGNATURE.length; i += 1) {
 // IHDR width/height: big-endian uint32 at offsets 16 and 20.
 const width = bytes.readUInt32BE(16);
 const height = bytes.readUInt32BE(20);
+if (width === 0 || height === 0) {
+  throw new Error('entry.png IHDR reports a zero dimension');
+}
 if (width > MAX_DIMENSION || height > MAX_DIMENSION) {
   throw new Error(`entry.png is ${width}x${height}, over the ${MAX_DIMENSION}px cap`);
 }
